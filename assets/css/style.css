@@ -1,0 +1,187 @@
+.icon-btn {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 70px;
+    border-radius: 45px;
+    display: inline-block;
+    margin: 4px;
+}
+
+.github {
+    color: black;
+}
+
+.linkedin {
+    color: #0077b5;
+}
+
+.angellist {
+    color: grey;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.angellist:hover {
+    background-color: grey;
+}
+
+.github:hover {
+    background-color: black;
+}
+
+body {
+    color: #067bc2;
+    font-size: 18px;
+}
+
+a {
+    color: #004d40;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+}
+
+h3 {
+    font-weight: 200;
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding: 30px 40px;
+    text-transform: uppercase;
+}
+
+.section {
+    padding-bottom: 30px;
+    padding-top: 0;
+    position: relative;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+#intro.section {
+    background: #067bc2 repeat;
+    position: relative;
+}
+
+#intro.section .container {
+    color: white;
+    font-weight: 200;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#intro.section .container *:not(span) {
+    font-weight: 300;
+    /* font-weight: 400; */
+    line-height: 150%;
+    /* padding: 0 0px; */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#intro.section .underline {
+    border-bottom: 5px solid #24305e;
+}
+
+#intro.section .teal {
+    padding: 0 10px;
+    background-color: #d16666 !important;
+}
+
+a.hoverline {
+    border-bottom: 3px solid transparent !important;
+    padding: 3px 3px 0 3px;
+    transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+}
+
+a.hoverline:hover {
+    border-bottom: 3px solid #004d40 !important;
+}
+
+@media (max-width: 992px) {
+    main {
+        padding-left: 0px;
+        padding-top: 64px;
+    }
+    h3 {
+        padding: 20px 30px;
+        margin-bottom: 40px;
+    }
+    .container {
+        margin: 0 auto;
+    }
+    nav.hide-on-large.only.trigger {
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+    .name-title {
+        display: block;
+        height: 100%;
+        padding-top: 15px;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+    }
+    .name-title > span,
+    .name-title > a {
+        position: relative;
+        line-height: 20px;
+    }
+    .name-title a {
+        font-size: 22px;
+        display: block;
+    }
+    .name-title span {
+        display: block;
+        font-size: 14px;
+    }
+    h3,
+    .container {
+        position: relative;
+        top: 64px;
+    }
+    section#intro {
+        margin-bottom: -64px;
+    }
+    .card .role {
+        position: relative;
+        right: initial;
+        top: initial;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 22px;
+        line-height: 200%;
+        margin: 30px 0 0;
+    }
+    #intro.section .container *:not(span) {
+        padding: 0;
+    }
+    #intro.section {
+        background-position-x: 30%;
+    }
+}
